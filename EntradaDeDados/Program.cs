@@ -20,11 +20,12 @@ namespace EntradaDeDados
             quartos = int.Parse(Console.ReadLine());
             Console.WriteLine("Entre com o preço de um produto");
             preco = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
-            Console.WriteLine("Entre seu ultimo numero, idade e altura(mesma linha)");
+            Console.WriteLine("Entre seu ultimo nome, idade e altura(mesma linha)");
             string[] vet = Console.ReadLine().Split(' ');
             string nome2 = vet[0];
             int idade = int.Parse(vet[1]);
             double altura = double.Parse(vet[2]);
+            
 
 
 
@@ -34,7 +35,13 @@ namespace EntradaDeDados
             Console.WriteLine(nome1);
             Console.WriteLine(quartos);
             Console.WriteLine(preco.ToString("F2",CultureInfo.InvariantCulture));
-            Console.WriteLine();
+            Console.WriteLine(nome2);
+            Console.WriteLine(idade);
+            Console.WriteLine(altura);
+
+
+
+
         }
     }
 }
