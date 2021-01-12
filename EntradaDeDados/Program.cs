@@ -24,7 +24,7 @@ namespace EntradaDeDados
             string[] vet = Console.ReadLine().Split(' ');
             string nome2 = vet[0];
             int idade = int.Parse(vet[1]);
-            double altura = double.Parse(vet[2]);
+            double altura = double.Parse(vet[2],CultureInfo.InvariantCulture);
             
 
 
@@ -37,7 +37,7 @@ namespace EntradaDeDados
             Console.WriteLine(preco.ToString("F2",CultureInfo.InvariantCulture));
             Console.WriteLine(nome2);
             Console.WriteLine(idade);
-            Console.WriteLine(altura);
+            Console.WriteLine(altura.ToString("F2",CultureInfo.InvariantCulture));
 
 
 
